@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google MAPS API</title>
+    <link rel="icon" href="car.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1>Find the Distance between two places</h1>
+            <p>This App helps calculate your travelling distance</p>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="from" >From</label>
+                    <div>
+                        <input type="text" id="from" placeholder="Origin">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="to" >Destination</label>
+                    <div>
+                        <input type="text" id="to" placeholder="Destination">
+                    </div>
+                </div>
+            </form>
+            <button>Direction</button>
+        </div>
+    </div>
+    <div id="map"></div>
+    <div id="output"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=<YOUR_API_KEY>&callback=initMap&libraries=places&v=weekly"
+      async
+    ></script>
+    <script src="app.js"></script>
+    <script>
+        // var options = {
+        //     type: ['(cities)']
+        // }
+        // var input1 = document.getElementById("from");
+        // var autocomplete1 = new google.maps.places.Autocomplete(input1, options);
+        // var input2 = document.getElementById("to");
+        // var autocomplete2 = new google.maps.places.Autocomplete(input2, options);
+    </script>
+</body>
+</html>
